@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geometry Dash - Play Official Game Online</title>
+<meta name="title" content="Geometry Dash - Play Official Game Online">
+<meta name="description" content="Jump into Geometry Dash! Play the iconic rhythm-based platformer online free. Master 21 levels, create custom stages, and join 100M+ players.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://geodash.org">
+<meta property="og:title" content="Geometry Dash - Play Official Game Online">
+<meta property="og:description" content="Jump into Geometry Dash! Play the iconic rhythm-based platformer online free. Master 21 levels, create custom stages, and join 100M+ players.">
+<meta property="og:image" content="https://geodash.org/images/geodash-og.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://geodash.org">
+<meta property="twitter:title" content="Geometry Dash - Play Official Game Online">
+<meta property="twitter:description" content="Jump into Geometry Dash! Play the iconic rhythm-based platformer online free. Master 21 levels, create custom stages, and join 100M+ players.">
+<meta property="twitter:image" content="https://geodash.org/images/geodash-og.jpg">
+<link rel="canonical" href="https://geodash.org/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Geodash.org">
+<link rel="preload" as="image" href="https://geodash.org/images/geodash-game-image.webp" fetchpriority="high">
+<link rel="preload" as="image" href="https://geodash.org/images/thumb-geodash-image.webp" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/geist/v3/gyByhwUxId8gMEwcGFWNOITd.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <style>@font-face{font-family:'Geist';font-style:normal;font-weight:100 900;font-display:swap;src:url(https://fonts.gstatic.com/s/geist/v3/gyByhwUxId8gMEwYGFWNOITddY4.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Geist';font-style:normal;font-weight:100 900;font-display:swap;src:url(https://fonts.gstatic.com/s/geist/v3/gyByhwUxId8gMEwSGFWNOITddY4.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Geist';font-style:normal;font-weight:100 900;font-display:swap;src:url(https://fonts.gstatic.com/s/geist/v3/gyByhwUxId8gMEwcGFWNOITd.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+    .new-link .badge {background: #ff4757;color: #fff;font-size: 0.7rem;padding: 2px 6px;border-radius: 10px;margin-left: 6px;animation: pulse 1.5s infinite;}
+    @keyframes  pulse {0% { transform: scale(1); opacity: 1; }50% { transform: scale(1.2); opacity: 0.7; }100% { transform: scale(1); opacity: 1; }}
+    </style>
+    <link rel="preload" href="https://geodash.org/css/all.min.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://geodash.org/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://geodash.org/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://geodash.org/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://geodash.org/favicon-16x16.png">
+    <link rel="manifest" href="https://geodash.org/site.webmanifest">
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl py-3">
+    <div class="container-fluid px-md-5">
+        <a class="navbar-brand" href="https://geodash.org">
+            <img src="https://geodash.org/images/GD-Logo.webp" width="245" height="38" alt="Logo" class="logo-nav-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+                class="navbar-nav ms-auto mb-2 mb-lg-0 bg-gray rounded-3 rounded-lg-5 px-3 border mt-2 mt-xl-0 py-2 py-xl-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://geodash.org/">
+                        <img src="https://geodash.org/images/home.webp" width="20" height="20" alt="menu icon" class="me-2">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="https://geodash.org/images/games.webp" width="20" height="20" alt="menu icon" class="me-2">
+                        All Game
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://geodash.org/game/geometry-dash-lite/">Geometry Dash Lite</a></li>
+                        <li><a class="dropdown-item" href="https://geodash.org/game/geometry-dash-meltdown/">Geometry Dash Meltdown</a></li>
+                        <li><a class="dropdown-item" href="https://geodash.org/game/geometry-dash-world/">Geometry Dash World</a></li>
+                        <li><a class="dropdown-item" href="https://geodash.org/game/geometry-dash-subzero/">Geometry Dash Subzero</a></li>
+                        <li><a class="dropdown-item" href="https://geodash.org/game/geometry-dash-scratch/">Geometry Dash Scratch</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://geodash.org/about/"> <img src="https://geodash.org/images/link.webp" width="20" height="20"
+                            alt="menu icon" class="me-2"> About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://playvio.io/game/space-waves" target="_blank"> <img src="https://geodash.org/images/link.webp" width="20" height="20"
+                            alt="Space Waves" class="me-2"> Space Waves</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>    <main>
+        <div class="container-fluid">
+            
+<div class="row justify-content-center py-md-4 mb-2">
+    <div class="col-xl-2 col-12 text-center header_ad_banner px-3 pb-3">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5753360521146850" data-ad-slot="4456591739" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+    <div class="col-md-10 col-lg-8 col-12 text-center">
+        <h1 class="fw-bold f57 pt-3 pt-md-4 pb-3 mb-3">Geometry Dash</h1>
+        <div class="game-container mb-3">
+            <div class="game-content" data-id="169">
+                <div id="allow_mobile_version"></div>
+                <div class="game-iframe-container" id="game-player">
+                    <div id="mobile-back-button" draggable="true">
+                        <i class="bi bi-x-circle-fill"></i>
+                    </div>
+                    <div id="bgame" class="rounded-4">
+                        <div id="iframe">
+                            <div id="fullscreenDiv"></div>
+                            <div id="game" style="display:none;" class="rounded-4">
+                                <iframe class="game-iframe" id="gameiframe" src="about:blank"
+                                    data-url="https://lolygames.github.io/gd-lit/" width="480"
+                                    height="800" allow="autoplay" allowfullscreen class="rounded-4"></iframe>
+                            </div>
+                            
+                            <div id="loader" class="preview rounded-4">
+                                <div id="playGame">
+                                    <img 
+                                    src="https://geodash.org/images/geodash-game-image.webp"
+                                    alt="Geometry Dash Lite Game"
+                                    width="815"
+                                    height="500"
+                                    class="glow"
+                                    fetchpriority="high"
+                                    decoding="async"
+                                    loading="eager"
+                                    >
+
+                                    <div class="play">
+                                        <div class="brand-logo">
+                                            <img 
+                                            src="https://geodash.org/images/brand-logo.webp"
+                                            width="382"
+                                            height="110"
+                                            alt="Playvio.io Logo"
+                                            class="img-fluid"
+                                            fetchpriority="low"
+                                            >
+                                        </div>
+                                        <div class="playimg">
+                                            <img 
+                                            src="https://geodash.org/images/thumb-geodash-image.webp"
+                                            alt="Geometry Dash Lite Game"
+                                            width="190"
+                                            height="190"
+                                            loading="lazy"
+                                            fetchpriority="low"
+                                            >
+                                        </div>
+                                        <div class="playBT" onclick="playGame()">
+                                            <span style="font-size:23px">Play Now</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center d-flex justify-content-center my-3">
+            <button class="btn btn-gray p-2 px-3 rounded-5 m-2" onclick="open_fullscreen()"
+                id="fullScreenBtn">
+                <img src="https://geodash.org/images/fullscreen.webp" width="20" height="20" alt="icon" class="me-2">
+                Fullscreen</button>
+        </div>
+        <div class="bg-gray rounded-4 rounded-lg-5 px-3 border p-2 mt-2">
+    <div class="d-flex justify-content-center flex-wrap">
+        <a href="https://geodash.org/games/" class="m-1 mx-2 btn-link"><img src="https://geodash.org/images/fire-emoji.svg" width="17" height="20" alt="fire emoji" class="me-1">Hot</a>
+        <a href="https://geodash.org/games/" class="m-1 mx-2 btn-link">Easy</a>
+        <a href="https://geodash.org/games/" class="m-1 mx-2 btn-link">Normal</a>
+        <a href="https://geodash.org/games/" class="m-1 mx-2 btn-link">Hard</a>
+        <a href="https://geodash.org/games/" class="m-1 mx-2 btn-link">Insane</a>
+        <a href="https://geodash.org/games/" class="m-1 mx-2 btn-link">Demon</a>
+        <a href="https://geodash.org/games/" class="m-1 mx-2 btn-link"><img src="https://geodash.org/images/start-emoji.svg" width="17" height="17" alt="star emoji" class="me-1">Popular</a>
+        <a href="https://cpsgames.org/" target="_blank" class="m-1 mx-2 btn-link new-link">CPSGames <span class="badge">NEW</span></a>
+    </div>
+</div>    </div>
+    <div class="col-xl-2 col-12 text-center bottomad_ad_banner px-3 pb-3">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5753360521146850" data-ad-slot="4456591739" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+</div>
+<div class="row mb-5">
+    <div class="col text-center">
+        <div class="marquee" id="marqueeDiv">
+            <div class="marquee__group" id="marqueeGroupDiv">
+                <a href="https://geodash.org/game/geometry-dash-lite/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-lite.webp" height="120" width="120"
+                        alt="geometry-dash-lite" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-meltdown/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-meltdown.webp" height="120" width="120"
+                        alt="geometry-dash-meltdown" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-world/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-world.webp" height="120" width="120" alt="geometry-dash-world"
+                        class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-subzero/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-subzero.webp" height="120" width="120"
+                        alt="geometry-dash-subzero" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-scratch/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-scratch-new.webp" height="120" width="120"
+                        alt="geometry-dash-scratch" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-lite/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-lite.webp" height="120" width="120"
+                        alt="geometry-dash-lite" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-meltdown/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-meltdown.webp" height="120" width="120"
+                        alt="geometry-dash-meltdown" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-world/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-world.webp" height="120" width="120" alt="geometry-dash-world"
+                        class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-subzero/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-subzero.webp" height="120" width="120"
+                        alt="geometry-dash-subzero" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-scratch/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-scratch-new.webp" height="120" width="120"
+                        alt="geometry-dash-scratch" class="game-thumb"> </a>
+            </div>
+            <div class="marquee__group">
+                <a href="https://geodash.org/game/geometry-dash-lite/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-lite.webp" height="120" width="120"
+                        alt="geometry-dash-lite" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-meltdown/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-meltdown.webp" height="120" width="120"
+                        alt="geometry-dash-meltdown" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-world/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-world.webp" height="120" width="120" alt="geometry-dash-world"
+                        class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-subzero/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-subzero.webp" height="120" width="120"
+                        alt="geometry-dash-subzero" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-scratch/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-scratch-new.webp" height="120" width="120"
+                        alt="geometry-dash-scratch" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-lite/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-lite.webp" height="120" width="120"
+                        alt="geometry-dash-lite" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-meltdown/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-meltdown.webp" height="120" width="120"
+                        alt="geometry-dash-meltdown" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-world/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-world.webp" height="120" width="120" alt="geometry-dash-world"
+                        class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-subzero/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-subzero.webp" height="120" width="120"
+                        alt="geometry-dash-subzero" class="game-thumb"> </a>
+                <a href="https://geodash.org/game/geometry-dash-scratch/" class="rounded-5"> <img
+                        src="https://geodash.org/images/geometry-dash-scratch-new.webp" height="120" width="120"
+                        alt="geometry-dash-scratch" class="game-thumb"> </a>
+            </div>
+        </div>
+        <a class="btn btn-gray fw-semibold p-2 px-3 rounded-4 my-4" href="https://geodash.org/games/">View All Games</a>
+    </div>
+</div><div class="row mb-3">
+    <div class="col-12 text-center">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5753360521146850"
+            data-ad-slot="5246929222" data-ad-format="autorelaxed"></ins>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8 col-12">
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">What is a Geometry Dash?</h2>
+            <p class="mb-0"><a href="https://geodash.org/">Geometry Dash</a> is an addictive rhythm-based action platformer where precision timing meets musical synchronization. Control a geometric cube through increasingly challenging obstacle courses, each uniquely designed with pulse-pounding electronic soundtracks. One mistake sends you back to the start, making every successful run incredibly satisfying.</p>
+            <p>Created by Swedish developer Robert Topala (RobTop) and published by RobTop Games, this iconic game launched on August 13, 2013, initially for iOS and Android mobile platforms. Since then, it has expanded to Steam, Windows, and macOS, building a massive global community of over 100 million players who create, share, and conquer custom levels daily.</p>
+            <p>Whether you're a casual player seeking quick entertainment or a hardcore gamer chasing perfect completion rates, Geometry Dash offers endless geometric challenges that test reflexes, memory, and rhythmic coordination.</p>
+        </div>
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">How To Play Geometry Dash?</h2>
+            <p class="mb-3"><b>Simple One-Touch Control System</b></p>
+            <ul>
+                <li><b>Click/Tap/Spacebar -</b> Make your cube jump over obstacles</li>
+                <li><b>Hold -</b> Continuously jump or fly (mode-dependent)</li>
+                <li><b>Release -</b> Stop flying or return to normal jumping</li>
+                <li><b>Timing is everything -</b> Synchronize actions with the music's rhythm</li>
+            </ul>
+            <h3 class="fw-bold mb-3">Gameplay Tips for Beginners</h3>
+            <p>Practice mode allows unlimited attempts with checkpoint markers placed throughout levels. Use this feature to learn level layouts, obstacle timing, and transition points before attempting official runs that count toward your statistics.</p>
+            <p>Listen carefully to the soundtrack - audio cues often signal upcoming obstacles or mode changes. Many top players rely on musical memory as much as visual cues for perfect runs.</p>
+            <p>Start with the first few levels (Stereo Madness, Back on Track) to understand basic mechanics before tackling advanced stages. Each level introduces new concepts that build upon previous skills.</p>
+            <p>Watch featured player replays to study optimal routes and timing strategies. The Geometry Dash community shares valuable tutorials and gameplay breakdowns for difficult sections.</p>
+
+            <h3 class="fw-bold mb-3">Common Beginner Mistakes to Avoid</h3>
+            <ul>
+                <li>Rushing into harder levels without mastering fundamentals</li>
+                <li>Ignoring practice mode and attempting official runs immediately</li>
+                <li>Not listening to the music's rhythm cues</li>
+                <li>Giving up after a few failed attempts (persistence is key!)</li>
+            </ul>
+        </div>
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">Why Players Love Geometry Dash</h2>
+            <div class="content-box p-3 mb-3">
+            <h3 class="fw-bold mb-3">Rhythm-Synced Gameplay</h3>
+            <p>Every jump, flight, and movement syncs perfectly with energetic background music from artists like DJVI, Waterflame, F-777, and Step. The audio-visual harmony creates an immersive experience where you feel the rhythm guiding your reflexes through each obstacle.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+            <h3 class="fw-bold mb-3">Progressive Difficulty Levels</h3>
+            <p>Start with beginner-friendly stages like "Stereo Madness" and advance through increasingly complex geometric mazes such as "Clubstep" and "Theory of Everything 2." From easy practice runs to demon-level challenges like "Bloodbath" and "Sonic Wave," there's always a new obstacle to master.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+            <h3 class="fw-bold mb-3">Instant Restart Mechanics</h3>
+            <p>Failed a jump? Instantly restart and try again. The seamless retry system keeps frustration minimal and practice sessions flowing, helping you memorize patterns and perfect your timing. This "one more try" loop has become a signature feature of RobTop's design philosophy.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+            <h3 class="fw-bold mb-3">Custom Level Creator</h3>
+            <p>Unleash your creativity with powerful level-building tools inspired by professional game design software. Design intricate obstacle courses, add custom music, implement triggers for advanced mechanics, and share your creations with the global Geometry Dash community. The editor supports color customization, object rotation, movement triggers, and spawn point placement.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+            <h3 class="fw-bold mb-3">Multiple Game Modes</h3>
+            <p>Transform your cube into ships, balls, UFOs, waves, robots, and spiders. Each mode offers unique physics and control schemes:</p>
+            <ul>
+                <li><b>Cube - </b>Classic jumping mechanics</li>
+                <li><b>Ship - </b>Hold to fly upward with gravity control</li>
+                <li><b>Ball - </b>Gravity-switching with reversed controls</li>
+                <li><b>UFO - </b>Precise vertical momentum management</li>
+                <li><b>Wave - </b>Continuous snake-like movement</li>
+                <li><b>Robot - </b>Variable jump heights</li>
+                <li><b>Spider - </b>Instant teleportation to surfaces</li>
+            </ul>
+            </div>
+            <div class="content-box p-3 mb-3">
+            <h3 class="fw-bold mb-3">Achievement System & Rewards</h3>
+            <p>Unlock secret coins hidden throughout official levels, complete daily and weekly challenges, and earn achievements that showcase your skills. Collect stars to unlock new icons, colors, and trails for customizing your geometric character. Track your progress through stat tracking and compete for completion rates with players worldwide.</p>
+            </div>
+        </div>
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">GD Official Levels & Main Campaign</h2>
+            <p><b>Main Level Progression:</b></p>
+            <ul>
+                <li><b>Stereo Madness</b> (Easy) - The introductory level teaching basic jumping</li>
+                <li><b>Back on Track</b> (Easy) - Introduction to ship mode</li>
+                <li><b>Polargeist</b> (Normal) - First appearance of speed changes</li>
+                <li><b>Dry Out</b> (Normal) - Wave mode debut</li>
+                <li><b>Base After Base</b> (Hard) - Dual-mode gameplay introduction</li>
+                <li><b>Cant Let Go</b> (Hard) - Complex timing sequences</li>
+                <li><b>Jumper</b> (Harder) - Advanced ship control challenges</li>
+                <li><b>Time Machine</b> (Harder) - UFO mode introduction</li>
+                <li><b>Cycles</b> (Harder) - Ball mode mastery requirement</li>
+                <li><b>xStep</b> (Insane) - Speed trial expertise needed</li>
+                <li><b>Clutterfunk</b> (Insane) - Memory and precision combined</li>
+                <li><b>Theory of Everything</b> (Insane) - Multi-mode coordination</li>
+                <li><b>Electroman Adventures</b> (Insane) - Robot mode introduction</li>
+                <li><b>Clubstep</b> (Demon) - First official demon-rated level</li>
+                <li><b>Electrodynamix</b> (Insane) - High-speed precision challenge</li>
+                <li><b>Hexagon Force</b> (Insane) - Gravity portal mastery</li>
+                <li><b>Blast Processing</b> (Harder) - Momentum control focus</li>
+                <li><b>Theory of Everything 2</b> (Demon) - Advanced demon challenge</li>
+                <li><b>Geometrical Dominator</b> (Hard) - Spider mode debut</li>
+                <li><b>Deadlocked</b> (Demon) - Wave and ship precision test</li>
+                <li><b>Fingerdash</b> (Insane) - Final main level challenge</li>
+            </ul>
+            <p><b>Secret Levels:</b></p>
+            <p>The Chaos Gauntlets, Demon Gauntlets, and hidden vault levels offer additional challenges for dedicated players seeking completion beyond the main campaign.</p>
+        </div>
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">Level Difficulty Guide - Choose Your Challenge</h2>
+            <ul>
+                <li><b>Easy (1-2 Stars) - </b>Perfect for newcomers learning jump timing and basic obstacle navigation. Stereo Madness establishes core gameplay mechanics.</li>
+                <li><b>Normal (3-4 Stars) - </b>Introduces speed changes, multiple game modes, and complex obstacle patterns requiring muscle memory development.</li>
+                <li><b>Hard (5 Stars) - </b>Intermediate challenges with precise timing windows, fake-out obstacles, and pattern memorization requirements.</li>
+                <li><b>Harder (6-7 Stars) - </b>Advanced gameplay featuring high-speed sections, tight spaces, and multi-mode coordination demonstrating core mechanic mastery.</li>
+                <li><b>Insane (8-9 Stars) - </b>Expert territory with extreme precision requirements and complex timing sequences. Clubstep and Theory of Everything 2 separate skilled players from masters.</li>
+                <li><b>Demon (10 Stars) - </b>Ultimate challenge tier subdivided into Easy, Medium, Hard, Insane, and Extreme Demon ratings. Requires hundreds of attempts and frame-perfect execution. Legendary demons like Bloodbath, Sonic Wave, and Tartarus represent the pinnacle of Geometry Dash difficulty.</li>
+            </ul>
+        </div>
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">Explore Geometry Dash Spin-Off Versions</h2>
+            <div class="content-box p-3 mb-3">
+                <h3 class="fw-bold mb-3">Geometry Dash Meltdown</h3>
+                <p class="mb-0">A free standalone spin-off featuring three exclusive levels set to music by F-777. Released in December 2015, Meltdown offers unique challenges with tracks "The Seven Seas," "Viking Arena," and "Airborne Robots." Perfect for players seeking fresh content beyond the main game.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <h3 class="fw-bold mb-3">Geometry Dash World</h3>
+                <p class="mb-0">Released in December 2016, World introduces ten exclusive levels across different themed worlds. Features music from Waterflame, Dex Arson, and other artists. This free version provides an excellent entry point for new players exploring Geometry Dash mechanics.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <h3 class="fw-bold mb-3">Geometry Dash SubZero</h3>
+                <p class="mb-0">The latest spin-off released in December 2017, SubZero contains three challenging levels with music by MDK. Featuring "Press Start," "Nock Em," and "Power Trip," this version showcases advanced visual effects and polished gameplay refinements from RobTop Games.</p>
+            </div>
+        </div>
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">Game Modes Explained</h2>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-3"><b>Cube Mode (Classic)</b></p>
+                <p class="mb-0">The original and most iconic form. Press to jump over spikes, gaps, and platforms. Yellow jump pads provide automatic upward momentum, while yellow orbs require player input for activation. Gravity portals flip your orientation, requiring mental adaptation to inverted controls.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-3"><b>Ship Mode</b></p>
+                <p class="mb-0">Hold to fly upward, release to descend through vertical obstacle courses. Gravity affects ship movement, creating momentum-based challenges. Blue gravity portals reverse flight controls, while size portals change hitbox dimensions.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-3"><b>Ball Mode</b></p>
+                <p class="mb-0">Gravity flips with each click, bouncing your sphere between floor and ceiling. Master inverted jumping mechanics and precise timing for rapid gravity switches. Combines elements of both cube and ship physics.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-3"><b>UFO Mode</b></p>
+                <p class="mb-0">Each click provides a small upward boost, creating precise vertical control with momentum accumulation. Requires smooth input rhythm rather than single precise clicks. Particularly challenging in high-speed sections.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-3"><b>Wave Mode</b></p>
+                <p class="mb-0">Continuous flying through narrow corridors requiring smooth, sustained control. Hold to move upward, release to descend in a snake-like pattern. No collision with solid blocks - only obstacles and boundaries cause failure. Often considered the most difficult mode to master.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-3"><b>Robot Mode</b></p>
+                <p class="mb-0">Variable jump heights based on hold duration. Short taps produce small hops, while holding creates higher jumps. Adds strategic decision-making to timing challenges.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-3"><b>Spider Mode</b></p>
+                <p class="mb-0">Instantly teleports to the nearest surface (floor or ceiling) with each click. Eliminates jump arcs entirely, creating unique gameplay distinct from other modes. Requires anticipation and spatial awareness.</p>
+            </div>
+        </div>
+
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">Millions of Player-Created Levels</h2>
+            <p>The Geometry Dash community has created over 70 million custom levels ranging from artistic showcases to brutal difficulty challenges that surpass <a href="https://en.wikipedia.org/wiki/Geometry_Dash" target="_blank">RobTop's</a> official demons. Browse featured levels curated by the community, search by difficulty rating, or filter by music genre and creation date.</p>
+            <p><b>Level Categories:</b></p>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-1"><b>Featured Levels</b></p>
+                <p class="mb-0">High-quality creations selected by RobTop Games for exceptional design, gameplay, and decoration. Earning a featured level is a prestigious achievement among creators.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-1"><b>Epic Levels</b></p>
+                <p class="mb-0">The highest tier of recognition, reserved for revolutionary designs that push creative boundaries and introduce innovative mechanics.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-1"><b>Demon Ratings</b></p>
+                <p class="mb-0">Community-verified extreme challenges rated by difficulty: Easy Demon, Medium Demon, Hard Demon, Insane Demon, and Extreme Demon. The Demon List website tracks the hardest verified levels globally.</p>
+            </div>
+            <div class="content-box p-3 mb-3">
+                <p class="mb-1"><b>Legendary Creators</b></p>
+                <p class="mb-0">Top creators like Riot, Viprin, TriAxis, Serponge, and Krmal have achieved celebrity status within the community. Their levels showcase advanced editor techniques including trigger systems, custom backgrounds, animated effects, and synchronized object movements that create cinematic experiences.</p>
+            </div>
+        </div>
+
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">Music & Soundtracks</h2>
+            <p>Music is fundamental to GD's identity. RobTop Games licensed tracks from renowned electronic music artists on Newgrounds, creating the game's signature sound.</p>
+            <p><b>Featured Artists:</b></p>
+            <ul>
+                <li><b>DJVI - </b>Creator of "Stereo Madness" and other iconic tracks</li>
+                <li><b>Waterflame - </b>Composed "Jumper," "Cycles," and multiple featured songs</li>
+                <li><b>F-777 - </b>Known for "The Seven Seas" and high-energy compositions</li>
+                <li><b>Step - </b>Creator of numerous popular custom level tracks</li>
+                <li><b>ForeverBound - </b>"Theory of Everything" series composer</li>
+                <li><b>MDK - </b>"Fingerdash" and "Press Start" artist</li>
+            </ul>
+            <p><b>Music Integration:</b></p>
+            <p>Each official level's obstacles synchronize with specific beats, drops, and musical transitions. This rhythm-based design creates intuitive gameplay where experienced players rely on audio cues as much as visual information. The practice of "playing by ear" becomes essential for mastering demon-difficulty content.</p>
+            <p>Custom level creators can import songs from Newgrounds' extensive library, with thousands of tracks available for integration. Many creators collaborate directly with musicians to produce original compositions for their levels.</p>
+        </div>
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h2 class="fw-bold mb-3">Play Geometry Dash Online Now</h2>
+            <p>Experience why over 100 million players worldwide have fallen in love with Geometry Dash. Test your reflexes against rhythmic obstacles, create impossible levels, join a passionate community, and discover the addictive satisfaction of perfect timing.</p>
+            <p>From Robert Topala's original vision to the millions of player-created masterpieces, Geo Dash offers endless geometric challenges that will test your skills, patience, and determination.</p>
+        </div>
+
+        <div class="p-3 p-md-4 mb-4 bg-gray border rounded-4">
+            <h3 class="fw-bold text-center mb-3"><b>Trademark Disclaimer</b></h3>
+            <p>All trademarks, logos, and brand names mentioned on this website are the property of their respective
+                owners. GeoDash.org is not affiliated with, endorsed by, or sponsored by any trademark owners,
+                including but not limited to RobTop Games, Robert Topala, or any related entities. The use of any
+                trademarks, logos, or brand names on this website is for informational purposes only and is
+                considered “fair use” under applicable copyright laws. It does not imply any association with the
+                trademark owners.</p>
+        </div>
+    </div>
+    
+</div>
+
+        </div>
+    </main>
+    <footer>
+    <div class="container-fluid pt-4 px-md-5 bg-gray">
+        <div class="row justy-content-evently">
+            <div class="col-lg-4 col-12 pe-md-5 mb-4 mb-lg-auto text-center">
+                <img data-src="https://geodash.org/images/footer-img.png" width="303" height="136" alt="Footer character image" class="mx-auto d-block img-fluid lozad">
+                <a href="https://geodash.org">
+                    <img data-src="https://geodash.org/images/GD-Logo.webp" width="245" height="38" alt="Footer Logo" class="img-fluid my-4 lozad">
+                </a>
+                <div class="mb-2 my-2">
+                    <a href="https://www.instagram.com/geodashofficial" target="_blank"><img data-src="https://geodash.org/images/new-insta.svg" width="24" height="23" alt="insta social" class="mx-2 lozad"></a>
+                    <a href="https://www.facebook.com/people/Geo-Dash/61563046889799/" target="_blank"><img data-src="https://geodash.org/images/new-fb.svg" width="24" height="23" alt="fb social" class="mx-2 lozad"></a>
+                    <a href="https://x.com/geodashfree" target="_blank"><img data-src="https://geodash.org/images/new-x.svg" width="24" height="23" alt="twitter social" class="mx-2 lozad"></a>
+                    <a href="https://www.youtube.com/@geodashonline" target="_blank"><img data-src="https://geodash.org/images/new-yt.svg" width="24" height="23" alt="yt social" class="mx-2 lozad"></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-12 mb-4 mb-lg-auto">
+                <p class="h5 mb-4 opacity-100">Games</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a class="btn-link" href="https://geodash.org/game/geometry-dash-lite/"> Geometry Dash Lite</a></li>
+                    <li class="mb-2"><a class="btn-link" href="https://geodash.org/game/geometry-dash-meltdown/">Geometry Dash Meltdown</a></li>
+                    <li class="mb-2"><a class="btn-link" href="https://geodash.org/game/geometry-dash-world/">Geometry Dash World</a></li>
+                    <li class="mb-2"><a class="btn-link" href="https://geodash.org/game/geometry-dash-subzero/">Geometry Dash Subzero</a></li>
+                    <li class="mb-2"><a class="btn-link" href="https://geodash.org/game/geometry-dash-scratch/">Geometry Dash Scratch</a></li>
+                    <li class="mb-2"><a class="btn-link" href="https://snowrider3gameonline.github.io/unblocked-game/">Snow Rider 3D</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-2 col-12 mb-4 mb-lg-auto">
+                <p class="h5 mb-4 opacity-100">Quick Links</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a class="btn-link" href="https://geodash.org/about/">About</a></li>
+                    <li class="mb-2"><a class="btn-link" href="https://geodash.org/contact/">Contact</a></li>
+                    <li class="mb-2"><a class="btn-link" href="https://geodash.org/privacy/">Privacy</a></li>
+                    <li class="mb-2"><a class="btn-link" href="https://geodash.org/terms/">Terms</a></li>
+                    
+                    <li class="mb-2"><a class="btn-link" href="https://gdforum.freeforums.net/" target="_blank">GD Community</a></li>
+                    <li class="mb-2"><a class="btn-link" href="https://www.youtube.com/channel/UCCBtdKOdyp-H2ZWKe2fMKaA" target="_blank">Resources</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 col-12 mb-lg-auto pe-md-5">
+                <p class="h5 mb-3 opacity-100">Language</p>
+                <a class="btn g-gradient rounded-4 dropdown-toggle ps-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img data-src="https://geodash.org/images/en.webp" alt="English Falg" width="20" height="20" class="me-2 lozad">
+                    English
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item active" href="https://geodash.org/">
+                            <img data-src="https://geodash.org/images/en.webp" alt="English" width="20" height="20" class="me-2 lozad">
+                            English</a></li>
+                    <li><a class="dropdown-item" href="https://geodash.org/vi/">
+                            <img data-src="https://geodash.org/images/vi.webp" alt="Viestnamese" width="20" height="20" class="me-2 lozad">
+                            Viestnamese</a></li>
+                    <li><a class="dropdown-item" href="https://geodash.org/fr/">
+                            <img data-src="https://geodash.org/images/fr.webp" alt="French" width="20" height="20" class="me-2 lozad">
+                            French</a></li>
+                    <li><a class="dropdown-item" href="https://geodash.org/es/">
+                            <img data-src="https://geodash.org/images/es.webp" alt="Spanish" width="20" height="20" class="me-2 lozad">
+                            Spanish</a></li>
+                    <li><a class="dropdown-item" href="https://geodash.org/pt/">
+                            <img data-src="https://geodash.org/images/pt.webp" alt="Portuguese" width="20" height="20" class="me-2 lozad">
+                            Portuguese</a></li>
+                    <li><a class="dropdown-item" href="https://geodash.org/de/">
+                            <img data-src="https://geodash.org/images/de.webp" alt="Germany" width="20" height="20" class="me-2 lozad">
+                            Germany </a></li>
+                    <li><a class="dropdown-item" href="https://geodash.org/id/">
+                            <img data-src="https://geodash.org/images/id.webp" alt="Indonesia" width="20" height="20" class="me-2 lozad">
+                            Indonesia </a></li>
+                    <li><a class="dropdown-item" href="https://geodash.org/tr/">
+                            <img data-src="https://geodash.org/images/tr.webp" alt="Turkey" width="20" height="20" class="me-2 lozad">
+                            Turkey </a></li>
+                    <li><a class="dropdown-item" href="https://geodash.org/nl/">
+                            <img data-src="https://geodash.org/images/nl.webp" alt="Dutch" width="20" height="20" class="me-2 lozad">
+                            Dutch </a></li>
+                </ul>
+            </div>
+            <div class="col-12 text-center mb-3">
+                <hr>
+                <span class="opacity-50 "> Copyright © 2026 GeoDash.org </span>
+                
+            </div>
+        </div>
+    </div>
+</footer>    <script src="https://geodash.org/js/bootstrap.js" defer></script>
+    <script>  
+        !function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):t.lozad=e()}(this,function(){"use strict";
+        var g="undefined"!=typeof document&&document.documentMode,v=function(t){return window&&window[t]},h=["data-iesrc","data-alt","data-src","data-srcset","data-background-image","data-toggle-class"],p={rootMargin:"0px",threshold:0,enableAutoReload:!1,load:function(t){if("picture"===t.nodeName.toLowerCase()){var e=t.querySelector("img"),r=!1;null===e&&(e=document.createElement("img"),r=!0),g&&t.getAttribute("data-iesrc")&&(e.src=t.getAttribute("data-iesrc")),t.getAttribute("data-alt")&&(e.alt=t.getAttribute("data-alt")),r&&t.append(e)}if("video"===t.nodeName.toLowerCase()&&!t.getAttribute("data-src")&&t.children){for(var a=t.children,o=void 0,i=0;i<=a.length-1;i++)(o=a[i].getAttribute("data-src"))&&(a[i].src=o);t.load()}t.getAttribute("data-poster")&&(t.poster=t.getAttribute("data-poster")),t.getAttribute("data-src")&&(t.src=t.getAttribute("data-src")),t.getAttribute("data-srcset")&&t.setAttribute("srcset",t.getAttribute("data-srcset"));var n=",";if(t.getAttribute("data-background-delimiter")&&(n=t.getAttribute("data-background-delimiter")),t.getAttribute("data-background-image"))t.style.backgroundImage="url('"+t.getAttribute("data-background-image").split(n).join("'),url('")+"')";else if(t.getAttribute("data-background-image-set")){var d=t.getAttribute("data-background-image-set").split(n),u=d[0].substr(0,d[0].indexOf(" "))||d[0];// Substring before ... 1x
+        u=-1===u.indexOf("url(")?"url("+u+")":u,1===d.length?t.style.backgroundImage=u:t.setAttribute("style",(t.getAttribute("style")||"")+"background-image: "+u+"; background-image: -webkit-image-set("+d+"); background-image: image-set("+d+")")}t.getAttribute("data-toggle-class")&&t.classList.toggle(t.getAttribute("data-toggle-class"))},loaded:function(){}};
+        function k(t){t.setAttribute("data-loaded",!0)}var y=function(t){return"true"===t.getAttribute("data-loaded")},w=function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:document;return t instanceof Element?[t]:t instanceof NodeList?t:e.querySelectorAll(t)};return function(){var r,a,e,o=0<arguments.length&&void 0!==arguments[0]?arguments[0]:".lozad",t=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},i=Object.assign({},p,t),n=i.root,d=i.rootMargin,u=i.threshold,g=i.enableAutoReload,s=i.load,c=i.loaded,l=void 0,b=void 0;v("IntersectionObserver")&&(l=new IntersectionObserver((r=s,a=c,function(t,e){t.forEach(function(t){(0<t.intersectionRatio||t.isIntersecting)&&(e.unobserve(t.target),y(t.target)||(r(t.target),k(t.target),a(t.target)))})}),{root:n,rootMargin:d,threshold:u})),v("MutationObserver")&&g&&(b=new MutationObserver((e=s,function(t){t.forEach(function(t){y(t.target)&&"attributes"===t.type&&-1<h.indexOf(t.attributeName)&&e(t.target)})})));for(var f,m=w(o,n),A=0;A<m.length;A++)(f=m[A]).getAttribute("data-placeholder-background")&&(f.style.background=f.getAttribute("data-placeholder-background"));return{observe:function(){for(var t=w(o,n),e=0;e<t.length;e++)y(t[e])||(l?(b&&g&&b.observe(t[e],{subtree:!0,attributes:!0,attributeFilter:h}),l.observe(t[e])):(s(t[e]),k(t[e]),c(t[e])))},triggerLoad:function(t){y(t)||(s(t),k(t),c(t))},observer:l,mutationObserver:b}}});    
+        document.addEventListener("DOMContentLoaded", function () {
+            let lozadObserver = lozad('.lozad', {
+                threshold: 0.1,
+                enableAutoReload: true,
+                load: function(el) {
+                    el.src = el.getAttribute("data-src");
+                }
+            })
+            lozadObserver.observe()
+
+            document.querySelectorAll('.lozad').forEach(el => {
+                if (el.classList.contains('d-none')) {
+                el.classList.remove('d-none');
+                el.style.display = 'block';
+                }
+            });
+        });
+    </script>
+    <script>
+function playGame() {
+    document.querySelector('#game').style.display = "block";
+    document.querySelector('#loader').style.display = "none";
+    document.querySelector('#gameiframe').src = document.querySelector('#gameiframe').dataset.url;
+}
+let fullScreenBtn = document.getElementById("fullScreenBtn");
+let iframeEl = document.getElementById("gameiframe");
+let fullscreenDiv = document.getElementById("fullscreenDiv");
+fullScreenBtn.addEventListener("click", (e) => {
+    iframeEl.classList.add('fullscreen');
+    fullscreenDiv.style.display = "block";
+}
+);
+document.addEventListener("fullscreenchange", function() {
+    if (!document.fullscreenElement) {
+        iframeEl.classList.remove('fullscreen');
+        fullscreenDiv.style.display = "none";
+    }
+});
+
+"use strict";
+var is_fullscreen = false;
+var elem = document.getElementById("iframe");
+function open_fullscreen() {
+    elem.requestFullscreen ? elem.requestFullscreen() : elem.webkitRequestFullscreen ? elem.webkitRequestFullscreen() : elem.msRequestFullscreen && elem.msRequestFullscreen()
+}
+function is_mobile_device() {
+    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+(function() {
+    var done = false;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5753360521146850';
+    var createScript = setTimeout(function() {
+        document.getElementsByTagName('HEAD').item(0).appendChild(script);
+    }, 5000);
+
+    script.onreadystatechange = script.onload = function(e) {
+        (function(c, l, a, r, i, t, y) {
+            c[a] = c[a] || function() {
+                (c[a].q = c[a].q || []).push(arguments)
+            };
+            t = l.createElement(r);
+            t.async = 1;
+            t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0];
+            y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "oerhheurf7");
+        if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+            if (document.documentElement.clientWidth > 1199) {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } else {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            }
+        }
+    };
+})();
+</script>
+</body>
+</html>

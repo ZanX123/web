@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>ZanX3</title>
+
+<style>
+body {
+    margin: 0;
+    background: black;
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* STARTSIDA */
+#searchPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchTitle {
+    color: darkred;
+    letter-spacing: 3px;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 500px;
+    padding: 15px;
+    font-size: 18px;
+    background: #050505;
+    color: white;
+    border: 1px solid darkred;
+    outline: none;
+}
+
+/* RESULTATSIDA */
+#resultPage {
+    display: none;
+    padding: 30px;
+}
+
+h1 {
+    color: darkred;
+    letter-spacing: 3px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+img {
+    width: 100%;
+    filter: grayscale(100%) contrast(130%);
+}
+
+/* BLÅ HEMLIG KNAPP */
+#secretBlue {
+    position: fixed;
+    bottom: 4px;
+    right: 4px;
+    width: 6px;
+    height: 6px;
+    background: #0066ff;
+    opacity: 0.4;
+}
+
+/* RÖD HEMLIG KNAPP */
+#secretRed {
+    position: fixed;
+    bottom: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    background: darkred;
+    opacity: 0.5;
+}
+</style>
+</head>
+<body>
+
+<!-- SÖK -->
+<div id="searchPage">
+    <div id="searchTitle">ZanX3 WebBrowser</div>
+    <input placeholder="Sök ZanX3..." onkeydown="go(event)">
+</div>
+
+<!-- RESULTAT -->
+<div id="resultPage">
+    <h1>ZANX3 RESULTAT</h1>
+
+    <div class="grid">
+        <img src="image/img1.jpg">
+        <img src="image/img2.jpg">
+        <img src="image/img3.jpg">
+        <img src="image/img4.jpg">
+    </div>
+
+    <!-- HEMLIGA KNAPPAR -->
+    <a id="secretBlue" href="geodash-org.html"></a>
+    <a id="secretRed" href="Game/index.html"></a>
+</div>
+
+<script>
+function go(e) {
+    if (e.key === "Enter") {
+        document.getElementById("searchPage").style.display = "none";
+        document.getElementById("resultPage").style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
